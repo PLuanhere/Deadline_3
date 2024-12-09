@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Voltaire&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-decoration: none;
+
+    list-style: none;
+}
+
+.StatusBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 0px 40px 0px 40px;
+    top: 0;
+    z-index: 0;
+}
+.StatusBar .StatusBar_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.StatusBar .StatusBar_left img {
+    width: 30px;
+}
+.StatusBar .StatusBar_center {
+    width: 35vw;
+    height: 80px;
+    background: #000;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    top: -30px;
+}
+.StatusBar .StatusBar_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.head {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu {
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.find {
+    font-size: 2rem;
+}
+
+.section1 {
+    background-color: #FCEED5;
+    position: relative;
+    z-index: -1;
+    margin-top: -80px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.section1_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0 40px;
+    gap: 50px;
+    color: #002A48;
+}
+
+.section1_content .sec1_title {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section1_content .sec1_title h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.section1_content .sec1_title h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section1_content .sec1_title p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section1_content .buttons {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.section1_content .buttons button {
+    padding: 40px 20px;
+    font-size: 40px;
+    line-height: 24px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.section1_content .buttons .first_button {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: none;
+    color: #003459;
+    border-color: #003459;
+}
+
+.section1_content .buttons .second_button {
+    background: #003459;
+    color: #ffffff;
+    border: none;
+}
+
+.section1_Image img {
+    width: 100%;
+    height: auto;
+}
+
+.section1_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.section1_background .shape1 {
+    width: 1400px;
+    aspect-ratio: 1 / 1;
+    background: #002A48;
+    border-radius: 100px;
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    z-index: -2;
+    rotate: -80deg;
+}
+
+.section1_background .shape2 {
+    width: 1400px;
+    aspect-ratio: 1 / 1;
+    background: #F7DBA7;
+    border-radius: 100px;
+    position: absolute;
+    z-index: -1;
+    rotate: -60deg;
+    top: 1000px;
+    left: 120px;
+}
+
+/* SECTION 2 */
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+.section2_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section2_title h4 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.section2_title h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section2_list .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.section2_list .list .item {
+    width: 48%;
+    padding: 20px;
+    border-radius: 20px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.item_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.item_name {
+    font-size: 35px;
+    font-weight: 700;
+    color: #00171F;
+}
+
+.item_gender {
+    font-size: 24px;
+    font-weight: 500;
+    color: #667479;
+}
+
+.item_age {
+    font-size: 24px;
+    font-weight: 500;
+    color: #667479;
+}
+
+.item_price {
+    font-size: 35px;
+    font-weight: 700;
+    color: #00171F;
+}
+
+.more {
+    padding: 25px;
+    background: none;
+    color: #003459;
+    border: 2px solid #003459;
+    border-radius: 70px;
+    font-size: 50px;
+}
