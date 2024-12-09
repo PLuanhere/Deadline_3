@@ -102,3 +102,21 @@ if(listItems){
     }
     listItems.innerHTML = htmls.join('');
 }
+
+const sec4Items = document.querySelector("[section4-items]");
+if(sec4Items){
+    const htmls = [];
+    for(let i = 0; i < data2.length; i++){
+        const item = data2[i];
+        const elementBox = `
+        <div class="items">
+            <img src="dogs/newDog${item.id}.png" alt="Img">
+            <div class="tag">Kiến thức thú cưng</div>
+            <div class="title">${item.title}</div>
+            <p>${item.info}</p>
+        </div>
+        `;
+        htmls.push(elementBox);
+    }
+    sec4Items.innerHTML = htmls.join('');
+}
